@@ -27,6 +27,6 @@ Now you can use [Postman](https://www.getpostman.com/) and in HEADER, use:
 
 | Name | Route | Verb
 | ------ | ------ | ------ |
-| Login | [localhost:8080/v1/login] [PlDb] | POST |
-| User | [localhost:8080/v1/register] [PlGh] | GET |
-| User | [localhost:8080/v1/register] [PlGh] | POST |
+| Login | [localhost:8080/v1/login] | POST |
+| User | [localhost:8080/v1/register] | GET |
+| User | [localhost:8080/v1/register] | POST |

@@ -26,7 +26,7 @@ $ php -S localhost:8080
 | Login | [localhost:8080/v1/login] | POST |
 | User | [localhost:8080/v1/register] | GET |
 | User | [localhost:8080/v1/register] | POST |
-```
+
 Call endpoint register(informed above), to create an account:
 ```json
 {

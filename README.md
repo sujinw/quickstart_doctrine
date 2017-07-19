@@ -5,7 +5,7 @@ Quickstart API REST Doctrine2, PHP7.1, Slim Framework 3 and Authentication with 
 
 Require [Composer](https://getcomposer.org/) to run.
 
-In the project root folder, execute:
+In the root, execute:
 
 ```sh
 $ php composer.phar install

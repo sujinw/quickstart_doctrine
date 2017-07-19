@@ -58,6 +58,4 @@ Now you can use [Postman](https://www.getpostman.com/) to call users GET endpoin
 | Authorization | BEARER **{{token}}** |
 
 
-If you have any questions, please contact:
-
-**leoo.farias@gmail.com**
+If you have any questions, please contact: **leoo.farias@gmail.com**

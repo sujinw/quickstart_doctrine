@@ -10,14 +10,16 @@ In the project root folder, execute:
 ```sh
 $ php composer.phar install
 ```
+### Use
 
 Now execute the server php:
 
 ```sh
 $ cd root/public
 $ php -S localhost:8080
+```
 
-### Endpoints
+#### Endpoints
 
 | Name | Route | Verb
 | ------ | ------ | ------ |

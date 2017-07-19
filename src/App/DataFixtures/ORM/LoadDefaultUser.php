@@ -12,7 +12,7 @@ class LoadDefaultUser extends AbstractFixture implements OrderedFixtureInterface
     public function load(ObjectManager $manager)
     {
         $user = new User();
-        $user->setName("Leonardo Farias Galvão");
+        $user->setName("Leonardo Farias");
         $user->setEmail("leoo.farias@gmail.com");
         $user->setPassword(md5(123456));
 

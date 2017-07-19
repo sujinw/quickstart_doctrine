@@ -39,7 +39,7 @@ class User
      *
      * @JMS\Expose
      * @JMS\Groups({"user"})
-     * @ORM\Column(name="email", type="string", length=100, nullable=false)
+     * @ORM\Column(name="email", type="string", length=100, unique=true, nullable=false)
      */
     private $email;
 
@@ -65,26 +65,10 @@ class User
     private $updatedAt;
 
     /**
-     * @var \Doctrine\Common\Collections\Collection
-     *
-     * @ORM\ManyToMany(targetEntity="User", inversedBy="user")
-     * @ORM\JoinTable(name="user_has_user",
-     *   joinColumns={
-     *     @ORM\JoinColumn(name="user_id", referencedColumnName="id")
-     *   },
-     *   inverseJoinColumns={
-     *     @ORM\JoinColumn(name="user_friend", referencedColumnName="id")
-     *   }
-     * )
-     */
-    private $userFriend;
-
-    /**
      * Constructor
      */
     public function __construct()
     {
-        $this->userFriend = new \Doctrine\Common\Collections\ArrayCollection();
         $this->createdAt = new \DateTime("now");
         $this->updatedAt = new \DateTime("now");
     }
@@ -217,40 +201,6 @@ class User
     public function getUpdatedAt()
     {
         return $this->updatedAt;
-    }
-
-    /**
-     * Add userFriend
-     *
-     * @param \User $userFriend
-     *
-     * @return User
-     */
-    public function addUserFriend(\User $userFriend)
-    {
-        $this->userFriend[] = $userFriend;
-
-        return $this;
-    }
-
-    /**
-     * Remove userFriend
-     *
-     * @param \User $userFriend
-     */
-    public function removeUserFriend(\User $userFriend)
-    {
-        $this->userFriend->removeElement($userFriend);
-    }
-
-    /**
-     * Get userFriend
-     *
-     * @return \Doctrine\Common\Collections\Collection
-     */
-    public function getUserFriend()
-    {
-        return $this->userFriend;
     }
 }
 

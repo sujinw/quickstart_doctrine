@@ -1,5 +1,5 @@
 # Quickstart API REST
-Quickstart API REST Doctrine2, PHP7.1, Slim Framework 3 and user Authentication with JWT.
+Quickstart API REST Doctrine2, PHP7.1, Slim Framework 3 and Authentication with JWT.
 
 ### Installation
 
